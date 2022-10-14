@@ -5,7 +5,7 @@ int main()
     int n = 5;
     for(int row = 0; row < 2*n; row++){
 
-        int c = (row < 5) ? n - row : row - n + 1;
+        int c = (row < n) ? n - row : row - n + 1;
         for(int st = 0; st < c; st++){
             cout<<"*";
         }

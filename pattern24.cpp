@@ -4,7 +4,7 @@ int main()
 {
     int n = 5;
     for(int row = 0; row < 2*n; row++){
-        int c = row <= 4 ? row + 1 : 2*n - row;
+        int c = row <= n-1 ? row + 1 : 2*n - row;
         for(int st = 0; st < c; st++){
             if(st == 0 || st == c-1) cout<<"*";
             else cout<<" ";
